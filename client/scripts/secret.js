@@ -18,7 +18,6 @@ $(document).ready(function (){
     getData();
 
     $('body').on('click', '#refresh', function(){
-        $('#container').empty();
         getData();
     });
 
