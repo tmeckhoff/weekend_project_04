@@ -18,8 +18,8 @@ $(document).ready(function (){
     getData();
 
     ('#refresh').on('click', 'button', function(){
-        event.preventDefault();
-        $('#container').load("index.html");
+        $('#container').empty();
+        getData();
 
     });
 

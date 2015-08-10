@@ -18,8 +18,8 @@ $(document).ready(function (){
     getData();
 
     ('#refresh').on('click', 'button', function(){
-        event.preventDefault();
-        $('#container').load("index2.html");
+        $('#container').empty();
+        getData();
     });
 
     $('#container').on('click', 'button', function() {
@@ -36,7 +36,7 @@ $(document).ready(function (){
                 console.log("Delete Complete!")
             }
         });
-        $(this).parent().remove()
+        $(this).parent().remove();
     });
 
 });
