@@ -2,6 +2,7 @@ $(document).ready(function (){
     $("#inputForm").submit(function(event){
         event.preventDefault();
         var formData = $("#inputForm").serialize();
+        console.log("Add Object");
         console.log(formData);
         $.ajax({
             type: "POST",
@@ -17,8 +18,9 @@ $(document).ready(function (){
 
     getData();
 
-    ('#refresh').on('click', 'button', function(){
+    $('body').on('click', '#refresh', function(){
         $('#container').empty();
+        console.log("Refreshing");
         getData();
 
     });

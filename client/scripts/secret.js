@@ -17,7 +17,7 @@ $(document).ready(function (){
 
     getData();
 
-    ('#refresh').on('click', 'button', function(){
+    $('body').on('click', '#refresh', function(){
         $('#container').empty();
         getData();
     });
